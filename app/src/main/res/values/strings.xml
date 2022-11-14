@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FoodApp</string>
+    <string name="pizza">Pizza</string>
+    <string name="salads">Salads</string>
+    <string name="desserts">Desserts</string>
+    <string name="pasta">Pasta</string>
+    <string name="beverages">Beverages</string>
+    <string name="itemsPizza">25 items"</string>
+    <string name="itemsSalads">30 items</string>
+    <string name="itemsdesserts">30 items</string>
+    <string name="itemspasta">44items</string>
+    <string name="itemsBeverages">30items</string>
+
+    <string name="pizzaMenu">Pizza\nMenu</string>
+    <string name="pizza1">pizza quattro\nformaggi</string>
+    <string name="pizza1info">informações</string>
+    <string name="fab_pizza">fab_pizza</string>
+    <string name="fab_pizza_1">fab_pizza_1</string>
+
+    <string name="precio">precio</string>
+
+    <string name="fab_desserts">fab_desserts</string>
+
+
+    <string name="fab_pasta">fab_pasta</string>
+    <string name="pastaMenu">Salads\nMenu</string>
+    <string name="pasta1">pasta quattro\nformaggi</string>
+    <string name="pasta1info">informações</string>
+    <string name="fab_pasta_1">fab_pasta_1</string>
+    <string name="rating_pasta_1">rating_pasta_1</string>
+
+
+    <string name="rating_pizza_1">rating_pizza_1</string>
+
+    <string name="fab_salads">fab_salads</string>
+    <string name="saladsMenu">Salads\nMenu</string>
+    <string name="salads1">salads quattro\nformaggi</string>
+    <string name="salads1info">informações</string>
+    <string name="fab_salads_1">fab_salads_1</string>
+    <string name="rating_salads_1">rating_salads_1</string>
+
+
+</resources>

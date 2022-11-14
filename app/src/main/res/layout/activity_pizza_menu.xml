@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PizzaMenu">
+
+    <RelativeLayout
+        android:id="@+id/col_left_pizza_menu"
+        android:layout_width="230dp"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark" />
+
+    <ScrollView
+        android:id="@+id/scroll_pizza_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/row_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_pizza_menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pizzaMenu"
+                    android:textSize="40sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/anton_regular"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/row_pizza_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/card_pizza_1"
+                    android:layout_width="300dp"
+                    android:layout_height="190dp"
+                    android:layout_centerHorizontal="true"
+                    app:cardCornerRadius="40dp"
+                    app:cardBackgroundColor="@color/white">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/tv_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="80dp"
+                            android:text="@string/pizza1"
+                            android:textSize="20sp"
+                            android:textColor="@color/colorAccent"
+                            android:fontFamily="@font/anton_regular"/>
+
+                        <TextView
+                            android:id="@+id/tv_info_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="@string/pizza1info"
+                            android:textColor="#757575"
+                            android:textSize="14sp" />
+
+                        <RatingBar
+                            android:id="@+id/rating_pizza_1"
+                            style="@style/Widget.AppCompat.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/tv_info_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            android:contentDescription="@string/rating_pizza_1"
+                            android:isIndicator="false"
+                            android:progressTint="@color/colorYellow" />
+                        <TextView
+                            android:id="@+id/tv_precio_pizza_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/rating_pizza_1"
+                            android:layout_marginLeft="80dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:fontFamily="@font/anton_regular"
+                            android:text="@string/precio"
+                            />
+
+
+                    </RelativeLayout>
+                </com.google.android.material.card.MaterialCardView>
+                <ImageView
+                    android:id="@+id/image_pizza_1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/pizza"
+                    android:elevation="2dp"
+                    android:layout_margin="4dp"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_pizza_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="6dp"
+                    android:backgroundTint="@color/white"
+                    android:contentDescription="@string/fab_pizza_1"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:tint="@color/colorPrimaryDark" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>
